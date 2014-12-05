@@ -14,8 +14,9 @@ test("loops expected number of times", function(t) {
 })
 
 test("can attach tick events", function(t) {
-    var count = 0
-    t.plan(3)
+    var count = 0,
+        tested = false
+    t.plan(6)
 
     var engine = loop().start()
     engine.on('tick', tick)
@@ -23,7 +24,16 @@ test("can attach tick events", function(t) {
     function tick(dt) {
         t.equal(typeof dt, 'number', 'iteration')
         count++
-        if (count>=3)
+        if (count>=3) {
             engine.stop()
+            engine.emit('test')
+        }
     }
+
+    engine.on('test', function() {
+        if (tested) return
+        tested = true
+        count = 0
+        engine.start()
+    })
 })
