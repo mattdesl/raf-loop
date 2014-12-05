@@ -1,0 +1,43 @@
+{
+  "name": "raf-loop",
+  "version": "1.0.0",
+  "description": "a minimal requestAnimationFrame render loop",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "events": "^1.0.2",
+    "inherits": "^2.0.1",
+    "raf": "^2.0.4",
+    "right-now": "^1.0.0"
+  },
+  "devDependencies": {
+    "tape": "^3.0.3"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "raf",
+    "request",
+    "animation",
+    "frame",
+    "requestAnimationFrame",
+    "loop",
+    "game",
+    "render",
+    "2d"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/raf-loop.git"
+  },
+  "homepage": "https://github.com/mattdesl/raf-loop",
+  "bugs": {
+    "url": "https://github.com/mattdesl/raf-loop/issues"
+  }
+}
