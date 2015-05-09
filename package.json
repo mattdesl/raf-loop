@@ -1,6 +1,6 @@
 {
   "name": "raf-loop",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "a minimal requestAnimationFrame render loop",
   "main": "index.js",
   "license": "MIT",
