@@ -1,7 +1,10 @@
 var inherits = require('inherits')
 var EventEmitter = require('events').EventEmitter
-var raf = require('raf')
 var now = require('right-now')
+
+//see raf #26
+//https://github.com/chrisdickinson/raf/issues/26
+var raf = require('@mattdesl/raf')
 
 module.exports = Engine
 function Engine(fn) {
