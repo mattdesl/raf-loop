@@ -12,8 +12,6 @@ var engine = loop(function(dt) {
 }).start()
 ```
 
-**Note:** This module requires npm v2.1+ to install.
-
 ## Usage
 
 [![NPM](https://nodei.co/npm/raf-loop.png)](https://nodei.co/npm/raf-loop/)

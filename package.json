@@ -13,6 +13,7 @@
     "@mattdesl/raf": "^3.0.0",
     "events": "^1.0.2",
     "inherits": "^2.0.1",
+    "raf": "^3.0.0",
     "right-now": "^1.0.0"
   },
   "devDependencies": {
