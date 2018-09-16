@@ -5,9 +5,9 @@
 A minimal requestAnimationFrame render loop for node and the browser, using high-performance timing where possible.
 
 ```js
-var loop = require('raf-loop')
+const loop = require('raf-loop')
 
-var engine = loop(function(dt) {
+const engine = loop((dt) => {
     // delta time in milliseconds 
 }).start()
 ```
